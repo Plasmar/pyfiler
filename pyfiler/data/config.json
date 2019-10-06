@@ -1,4 +1,5 @@
-config_obj = {
-    'prefix': 'path',
-    'prefix2', 'path2',
+{
+    "prefix": "dest dir",
+    "prefix2": "dest dir2",
+    "prefix3": "dest dir3"
 }

@@ -1,5 +1,5 @@
+import json
 import os
-from py_filer.handlers.config import config_obj
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
@@ -19,8 +19,8 @@ class SetupWorker:
 
         if dry_run is False or dry_run == '':
             self.dry_run = False
-        else if dry_run is not True or False:
-            raise Exception("[*] dry run can only be a boolean value")
+        elif dry_run is not True or False:
+                raise Exception("[*] dry run can only be a boolean value")
         else:
             self.dry_run = dry_run
 
@@ -54,6 +54,10 @@ class SetupWorker:
 
 
 if __name__ == '__main__':
+    """the start of the program."""
+    with open("./data/config.json", "r") as read_file:
+        config_obj = json.load(read_file)
+
     setup_worker = SetupWorker(config_obj)
     needed_dirs = setup_worker.exec_setup_process(dry_run=True)
     setup_worker.create_missing_dirs(needed_dirs)

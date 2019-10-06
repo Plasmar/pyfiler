@@ -1,0 +1,3 @@
+include pyfiler/data/config.json
+include data/config.json
+
