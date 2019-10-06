@@ -30,7 +30,7 @@ class SetupWorker:
                 self.missing_dirs.append(self.dest_dir)
                 print("[*] missing dir at path: " + self.dest_dir)
 
-        print("[*] filesystem prep complete. " + len(self.missing_dirs) + " new dirs needed")
+        print("[*] filesystem prep complete. " + str(len(self.missing_dirs)) + " new dirs needed")
 
         # reset missing dirs to empty list if dry run
         if self.dry_run is True:
