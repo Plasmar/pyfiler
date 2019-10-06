@@ -1,0 +1,4 @@
+config_obj = {
+    'prefix': 'path',
+    'prefix2', 'path2',
+}
