@@ -51,13 +51,13 @@ def main():
     observer.start()
 
     # create the loop that will enable the watchdog worker to remain alive
-    try:
-        while True:
-            # make it poll the watch_dir every 10 seconds
-            time.sleep(10)
-    except KeyboardInterrupt:
-        observer.stop()
-    observer.join
+    # try:
+        # while True:
+            # # make it poll the watch_dir every 10 seconds
+            # time.sleep(10)
+    # except KeyboardInterrupt:
+        # observer.stop()
+    # observer.join
 
 
 
