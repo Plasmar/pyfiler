@@ -1,5 +1,6 @@
 import json
 import os
+import watchdog
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
