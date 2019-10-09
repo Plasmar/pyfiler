@@ -20,4 +20,7 @@ setup(
         "Operating System :: OS Independent",
     ],
     include_package_data=True,
+    package_data={
+        'config': ['./pyfiler/data/config.json']
+    }
 )

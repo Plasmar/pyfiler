@@ -54,12 +54,12 @@ class SetupWorker:
 
 
 
-if __name__ == '__main__':
-    """the start of the program."""
-    with open("./data/config.json", "r") as read_file:
-        config_obj = json.load(read_file)
+# if __name__ == '__main__':
+    # """the start of the program."""
+    # with open("./data/config.json", "r") as read_file:
+        # config_obj = json.load(read_file)
 
-    setup_worker = SetupWorker(config_obj)
-    needed_dirs = setup_worker.exec_setup_process(dry_run=True)
-    setup_worker.create_missing_dirs(needed_dirs)
+    # setup_worker = SetupWorker(config_obj)
+    # needed_dirs = setup_worker.exec_setup_process(dry_run=True)
+    # setup_worker.create_missing_dirs(needed_dirs)
 
