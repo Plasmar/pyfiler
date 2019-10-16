@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="pyfiler",
-    version="0.0.1",
+    version="0.0.3",
     author="Cameron Merricck",
     author_email="cameron.merrick@optiv.com",
     description="Automated filesystem routing / filing using prefix-specifiers",
@@ -19,8 +19,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    include_package_data=True,
-    package_data={
-        'config': ['./pyfiler/data/config.json']
-    }
+    package_data={'pyfiler/data': '*.json'}
 )

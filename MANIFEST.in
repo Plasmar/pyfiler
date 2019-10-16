@@ -1,3 +1,3 @@
-include pyfiler/data/config.json
-include data/config.json
-
+include pyfiler README LICENSE
+recursive include pyfiler/data *
+recursive include pyfiler/ *
