@@ -7,7 +7,7 @@ The system uses a configuration file that you define with key/values of:
 - value: target destination directory where said file should be routed
 
 Inline-style: 
-![alt text](https://github.com/plasmar/pyfiler/pyfiler_usage.png "pyfiler_usage.png")
+![alt text](https://github.com/Plasmar/pyfiler/blob/master/pyfiler_usage.png "pyfiler_usage.png")
 
 
 
